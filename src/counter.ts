@@ -4,7 +4,7 @@ import { resourceResolver } from './utils/resource';
 import { ModuleTree } from './utils/module-tree';
 import { existsSync } from 'fs';
 import * as chalk from 'chalk';
-ngcounter()
+
 export function ngcounter() {
   const error = message => {
     console.error(chalk.default.bgRed.white(message));
