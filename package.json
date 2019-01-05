@@ -1,0 +1,42 @@
+{
+  "name": "ng-app-counter",
+  "version": "0.0.2",
+  "description": "Counter Angular project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamaks/ng-app-counter.git"
+  },
+  "keywords": [
+    "angular",
+    "counter",
+    "ng"
+  ],
+  "author": "Jamaks",
+  "license": "MIT",
+  "bin": "./bin/ng-app-counter",
+  "bugs": {
+    "url": "https://github.com/jamaks/ng-app-counter/issues"
+  },
+  "homepage": "https://github.com/jamaks/ng-app-counter#readme",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "postbuild": "copy bin dist && copy package.json dist && copy README.md dist && copy LICENSE dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@angular/compiler": "~7.1.0",
+    "@angular/compiler-cli": "~7.1.0",
+    "@angular/core": "~7.1.0",
+    "rxjs": "~6.3.3",
+    "chalk": "^2.4.1",
+    "typescript": "~3.1.6",
+    "ngast": "^0.2.2",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "copy": "^0.3.2",
+    "rimraf": "^2.6.3"
+  }
+}
