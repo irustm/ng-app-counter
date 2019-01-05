@@ -1,9 +1,10 @@
 import * as minimist from 'minimist';
+import * as chalk from 'chalk';
+import { existsSync } from 'fs';
 import { ProjectSymbols } from 'ngast';
+
 import { resourceResolver } from './utils/resource';
 import { ModuleTree } from './utils/module-tree';
-import { existsSync } from 'fs';
-import * as chalk from 'chalk';
 
 export function ngcounter() {
   const error = message => {
