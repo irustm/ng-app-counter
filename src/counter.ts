@@ -21,12 +21,6 @@ export function ngcounter() {
   if (!projectPath) {
     projectPath = './tsconfig.json';
   }
-//   if (typeof projectPath !== 'string') {
-//     error(
-//       'Specify the path to the root "tsconfig" file of your project with the "-p" flag'
-//     );
-//     process.exit(1);
-//   }
   if (!existsSync(projectPath)) {
     error('Cannot find tsconfig at "' + projectPath + '".');
     process.exit(1);
