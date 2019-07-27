@@ -31,7 +31,7 @@
     "rxjs": "~6.3.3",
     "chalk": "^2.4.1",
     "typescript": "~3.1.6",
-    "ngast": "^0.2.4",
+    "ngast": "^0.3.0",
     "minimist": "^1.2.0"
   },
   "devDependencies": {
