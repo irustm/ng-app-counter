@@ -1,7 +1,7 @@
 import * as minimist from 'minimist';
 import * as chalk from 'chalk';
 import { existsSync } from 'fs';
-import { ProjectSymbols } from 'ngast';
+import { ProjectSymbols, DirectiveSymbol, ProviderSymbol, PipeSymbol, ModuleSymbol } from 'ngast';
 
 import { resourceResolver } from './utils/resource';
 import { ModuleTree } from './utils/module-tree';
@@ -35,11 +35,13 @@ export function ngcounter() {
     resourceResolver,
     e => (parseError = e)
   );
-  const allModules = projectSymbols.getModules();
-  const allPipes = projectSymbols.getPipes();
-  const allProviders = projectSymbols.getProviders();
-  const allDirectives = projectSymbols.getDirectives();
+
+  const allModules: ModuleSymbol[] = projectSymbols.getModules();
+  const allPipes: PipeSymbol[] = projectSymbols.getPipes();
+  const allProviders: ProviderSymbol[] = projectSymbols.getProviders();
+  const allDirectives: DirectiveSymbol[] = projectSymbols.getDirectives();
   const treeMod = new ModuleTree();
+  
   if (!parseError) {
     info("Results:")    
     info(`Modules: ${allModules.length}`);
