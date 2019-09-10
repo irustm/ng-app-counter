@@ -25,13 +25,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@angular/compiler": "~7.1.0",
-    "@angular/compiler-cli": "~7.1.0",
-    "@angular/core": "~7.1.0",
-    "rxjs": "~6.3.3",
-    "chalk": "^2.4.1",
-    "typescript": "~3.1.6",
-    "ngast": "^0.2.4",
+    "@angular/compiler": "~8.2.5",
+    "@angular/compiler-cli": "~8.2.5",
+    "@angular/core": "~8.2.5",
+    "rxjs": "~6.5.3",
+    "chalk": "^2.4.2",
+    "typescript": "~3.5",
+    "ngast": "^0.3.0",
     "minimist": "^1.2.0"
   },
   "devDependencies": {
