@@ -1,23 +1,23 @@
 {
   "name": "ng-app-counter",
-  "version": "0.1.0",
+  "version": "0.3.0-beta",
   "description": "Counter Angular project",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamaks/ng-app-counter.git"
+    "url": "https://github.com/irustm/ng-app-counter.git"
   },
   "keywords": [
     "angular",
     "counter",
     "ng"
   ],
-  "author": "Jamaks",
+  "author": "irustm",
   "license": "MIT",
   "bin": "./bin/ng-app-counter",
   "bugs": {
-    "url": "https://github.com/jamaks/ng-app-counter/issues"
+    "url": "https://github.com/irustm/ng-app-counter/issues"
   },
-  "homepage": "https://github.com/jamaks/ng-app-counter#readme",
+  "homepage": "https://github.com/irustm/ng-app-counter#readme",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
@@ -25,17 +25,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@angular/compiler": "~8.2.5",
-    "@angular/compiler-cli": "~8.2.5",
-    "@angular/core": "~8.2.5",
-    "rxjs": "~6.5.3",
+    "@angular/compiler": "^10.0.0",
+    "@angular/compiler-cli": "^10.0.0",
+    "@angular/core": "^10.0.0",
     "chalk": "^2.4.2",
-    "typescript": "~3.5",
-    "ngast": "^0.3.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "typescript": "~3.9.7"
   },
   "devDependencies": {
-    "@types/node": "^10.12.18",
+    "@types/node": "^14.10.3",
     "copy": "^0.3.2",
     "rimraf": "^2.6.3"
   }

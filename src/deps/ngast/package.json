@@ -1,0 +1,58 @@
+{
+  "_from": "file:ngast-0.4.0-next.tgz",
+  "_id": "ngast@0.4.0-next",
+  "_inBundle": false,
+  "_integrity": "sha512-S7eK7z6/WMoSRGf936mFlThlMDo46wSf2WhVs/5GdPaNF/qLJZE2KY7WQC9IHoXRGrk62eCCcMNSfmzGQUodnw==",
+  "_location": "/ngast",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "file",
+    "where": "/Users/irustm/dev/github/ng-app-counter",
+    "raw": "ngast-0.4.0-next.tgz",
+    "rawSpec": "ngast-0.4.0-next.tgz",
+    "saveSpec": "file:ngast-0.4.0-next.tgz",
+    "fetchSpec": "/Users/irustm/dev/github/ng-app-counter/ngast-0.4.0-next.tgz"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "/Users/irustm/dev/github/ng-app-counter/ngast-0.4.0-next.tgz",
+  "_shasum": "c426811c2668cb323a9b3b50efe8ed3661ed20fb",
+  "_spec": "ngast-0.4.0-next.tgz",
+  "_where": "/Users/irustm/dev/github/ng-app-counter",
+  "author": {
+    "name": "Minko Gechev",
+    "email": "mgechev@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mgechev/ngast/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Parsing tools for Angular. The project is an abstraction over the Angular compiler which provides friendly interface.",
+  "homepage": "https://github.com/mgechev/ngast#readme",
+  "keywords": [
+    "AST",
+    "Angular",
+    "Parser",
+    "Compiler"
+  ],
+  "license": "MIT",
+  "main": "ngast.bundle.js",
+  "module": "index.js",
+  "name": "ngast",
+  "peerDependencies": {
+    "@angular/compiler": "^10.0.0",
+    "@angular/compiler-cli": "^10.0.0",
+    "@angular/core": "^10.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "~3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgechev/ngast.git"
+  },
+  "types": "index.d.ts",
+  "version": "0.4.0-next"
+}
