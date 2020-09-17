@@ -16,7 +16,7 @@ export const info = (message, count1?, count2?) => {
 export function tryGetsProjectPath(): string {
     let projectPath = (minimist(process.argv.slice(2)) as any).p;
     if (!projectPath) {
-        projectPath = './tsconfig.json';
+        projectPath = './tsconfig.app.json';
     }
 
     if (!existsSync(projectPath)) {
