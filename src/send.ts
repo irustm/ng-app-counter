@@ -1,7 +1,8 @@
 const https = require('follow-redirects').https;
 
 export function trySendData(data) {
-    console.log("\nSend anonymous statistics? y/n (y)")
+    console.log("\nSend this anonymous statistics? y/n (y)\n");
+    console.log(JSON.stringify(data));
 
     var stdin = process.stdin;
 
