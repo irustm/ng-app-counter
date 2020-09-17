@@ -7,8 +7,9 @@ import {
     ComponentSymbol
 } from './deps/ngast';
 import {ClassRecord} from "@angular/compiler-cli/src/ngtsc/transform";
-import {error, info, tryGetsProjectPath} from "./utils";
+import { info, tryGetsProjectPath} from "./utils";
 import { parseAngularRoutes } from "guess-parser";
+import {trySendData, sendData} from "./send";
 
 export function ngcounter() {
     const projectPath = tryGetsProjectPath();
@@ -32,16 +33,29 @@ export function ngcounter() {
     info(`Classes:`, classes.length);
 
     console.log("\nParse routes...\n");
+    let lazyRoutesLength = 0;
+    let allRoutesLength = 0;
 
     try {
         const allRoutes = parseAngularRoutes(projectPath) || [];
 
         const lazyRoutes = allRoutes.filter(r => r.lazy);
 
-        info(`All routes:`, allRoutes.length);
-        info(`Lazy routes:`, lazyRoutes.length);
+        info(`All routes:`, allRoutesLength = allRoutes.length);
+        info(`Lazy routes:`, lazyRoutesLength = lazyRoutes.length);
 
     } catch (e) {
         console.error(e);
     }
+
+    trySendData({
+        allModules: allModules.length,
+        allPipes: allPipes.length,
+        allDirectives: allDirectives.length,
+        allComponents: allComponents.length,
+        allInjectables: allInjectables.length,
+        classes: classes.length,
+        allRoutes: allRoutesLength,
+        lazyRoutes: lazyRoutesLength
+    });
 }

@@ -29,6 +29,7 @@
     "@angular/compiler-cli": "^10.0.0",
     "@angular/core": "^10.0.0",
     "chalk": "^2.4.2",
+    "follow-redirects": "^1.13.0",
     "guess-parser": "^0.4.19",
     "minimist": "^1.2.0",
     "typescript": "~3.9.7"
