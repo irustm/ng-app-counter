@@ -2,7 +2,7 @@
 
 Count the number of Modules, Lazy Modules, Pipes, Providers, Directives, Components used in an Angular application.
 
-<img src="https://raw.githubusercontent.com/irustm/ng-app-counter/master/assets/screenv050.png" alt="screen angular counter" width="600">
+<img width="300" src="https://raw.githubusercontent.com/irustm/ng-app-counter/master/assets/screenv050.png" alt="screen angular counter" width="600">
 
 ## Usage
 
