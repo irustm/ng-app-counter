@@ -1,6 +1,6 @@
 {
   "name": "ng-app-counter",
-  "version": "0.5.0-beta.0",
+  "version": "0.5.1",
   "description": "Counter Angular project",
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "follow-redirects": "^1.13.0",
     "guess-parser": "^0.4.19",
     "minimist": "^1.2.0",
+    "ngast": "^0.5.0",
     "typescript": "~3.9.7"
   },
   "devDependencies": {

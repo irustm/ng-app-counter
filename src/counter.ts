@@ -5,7 +5,7 @@ import {
     NgModuleSymbol,
     InjectableSymbol,
     ComponentSymbol
-} from './deps/ngast';
+} from "ngast";
 import {ClassRecord} from "@angular/compiler-cli/src/ngtsc/transform";
 import { info, tryGetsProjectPath} from "./utils";
 import { parseAngularRoutes } from "guess-parser";

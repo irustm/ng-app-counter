@@ -1,3 +1,0 @@
-[submodule "ngast"]
-	path = ngast
-	url = git@github.com:ng-ast/ngast.git
