@@ -28,5 +28,9 @@ npm install --save-dev ng-app-counter
 ```
 Run `npm run count `
 
+## Stat of use
+
+<img width="300" src="https://raw.githubusercontent.com/irustm/ng-app-counter/master/assets/classes.jpeg" alt="screen angular counter" width="800">
+
 ## License
 MIT
