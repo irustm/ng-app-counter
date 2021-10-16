@@ -1,6 +1,6 @@
 # ng-app-counter
 
-Count the number of Modules, Lazy Modules, Pipes, Providers, Directives, Components used in an Angular application.
+Count the number of Modules, Lazy Modules, Pipes, Providers, Directives, Components and Routes used in an Angular application.
 
 This tool uses [ngast](https://github.com/ng-ast/ngast) and [quess-parser](https://github.com/guess-js/guess/tree/master/packages/guess-parser) for parse routers
 
