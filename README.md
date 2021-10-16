@@ -2,7 +2,9 @@
 
 Count the number of Modules, Lazy Modules, Pipes, Providers, Directives, Components used in an Angular application.
 
-<img width="300" src="https://raw.githubusercontent.com/irustm/ng-app-counter/master/assets/screenv050.png" alt="screen angular counter" width="600">
+This tool uses [ngast](https://github.com/ng-ast/ngast) and [quess-parser](https://github.com/guess-js/guess/tree/master/packages/guess-parser) for parse routers
+
+<img width="300" src="https://raw.githubusercontent.com/irustm/ng-app-counter/master/assets/screenv050.png" alt="screen angular counter">
 
 ## Usage
 
@@ -25,6 +27,10 @@ npm install --save-dev ng-app-counter
 
 ```
 Run `npm run count `
+
+## Stat of use
+
+<img src="https://raw.githubusercontent.com/irustm/ng-app-counter/master/assets/classes.jpg" alt="screen angular counter stat" width="800">
 
 ## License
 MIT
