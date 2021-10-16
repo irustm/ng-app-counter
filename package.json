@@ -1,6 +1,6 @@
 {
   "name": "ng-app-counter",
-  "version": "0.5.1",
+  "version": "0.6.2",
   "description": "Counter Angular project",
   "repository": {
     "type": "git",
@@ -21,23 +21,21 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "postbuild": "copy bin dist && copy package.json dist && copy README.md dist && copy LICENSE dist",
+    "postbuild": "copy dist/bin dist && copy package.json dist && copy README.md dist && copy LICENSE dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@angular/compiler": "^10.0.0",
     "@angular/compiler-cli": "^10.0.0",
-    "@angular/core": "^10.0.0",
     "chalk": "^2.4.2",
     "follow-redirects": "^1.13.0",
-    "guess-parser": "^0.4.19",
     "minimist": "^1.2.0",
     "ngast": "^0.5.0",
+    "ts-evaluator": "^0.1.0",
     "typescript": "~3.9.7"
   },
   "devDependencies": {
     "@types/node": "^14.10.3",
-    "copy": "^0.3.2",
+    "copy": "^0.0.1",
     "rimraf": "^2.6.3"
   }
 }

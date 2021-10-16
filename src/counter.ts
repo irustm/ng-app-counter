@@ -8,8 +8,9 @@ import {
 } from "ngast";
 import {ClassRecord} from "@angular/compiler-cli/src/ngtsc/transform";
 import { info, tryGetsProjectPath} from "./utils";
-import { parseAngularRoutes } from "guess-parser";
+// import { parseAngularRoutes } from "guess-parser";
 import {trySendData, sendData} from "./send";
+import {parseRoutes} from "../guess/packages/guess-parser/src/angular";
 
 export function ngcounter() {
     const projectPath = tryGetsProjectPath();
@@ -37,7 +38,7 @@ export function ngcounter() {
     let allRoutesLength = 0;
 
     try {
-        const allRoutes = parseAngularRoutes(projectPath) || [];
+        const allRoutes = parseRoutes(projectPath) || [];
 
         const lazyRoutes = allRoutes.filter(r => r.lazy);
 
